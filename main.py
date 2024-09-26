@@ -16,6 +16,7 @@ def guessANumber():
         guess = guessNumber()
         attempts = compare(guess, answer, attempts)
         if attempts == 0:
+            print("[blue] Right answer is: ", answer)
             print("[red]You limit attempts")
             break
         elif attempts == 'win':
